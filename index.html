@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="main-container">
@@ -15,6 +15,7 @@
         <header class="header">
             <div class="logo">
                 <h1>Vanita</h1>
+                <span class="tagline">Unrestricted Intelligence</span>
             </div>
             <div class="auth-section">
                 <button class="login-btn" onclick="showLogin()">LOGIN / SIGN UP</button>
@@ -24,18 +25,31 @@
         <!-- Hero Section -->
         <main class="hero-section">
             <div class="hero-content">
-                <!-- Background architectural elements -->
-                <div class="architecture-bg">
-                    <div class="column column-1"></div>
-                    <div class="column column-2"></div>
-                    <div class="column column-3"></div>
-                    <div class="column column-4"></div>
+                <!-- Animated Background -->
+                <div class="animated-bg">
+                    <div class="floating-orb orb-1"></div>
+                    <div class="floating-orb orb-2"></div>
+                    <div class="floating-orb orb-3"></div>
+                    <div class="neural-network">
+                        <div class="node node-1"></div>
+                        <div class="node node-2"></div>
+                        <div class="node node-3"></div>
+                        <div class="node node-4"></div>
+                        <div class="connection conn-1"></div>
+                        <div class="connection conn-2"></div>
+                        <div class="connection conn-3"></div>
+                    </div>
                 </div>
 
                 <!-- Main Search Interface -->
                 <div class="search-container">
+                    <div class="hero-text">
+                        <h2 class="main-title">Experience AI Without Limits</h2>
+                        <p class="subtitle">Powered by blockchain technology and community governance</p>
+                    </div>
+                    
                     <div class="search-box">
-                        <input type="text" placeholder="Ask anything" id="mainSearch" class="main-input">
+                        <input type="text" placeholder="Ask anything without restrictions..." id="mainSearch" class="main-input">
                         <button class="send-btn" onclick="handleSearch()">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2 21L23 12L2 3V10L17 12L2 14V21Z" fill="currentColor"/>
@@ -80,84 +94,260 @@
                     </div>
                 </div>
 
-                <!-- Water reflection effect -->
-                <div class="water-reflection"></div>
+                <!-- Particle Effect -->
+                <div class="particles">
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                </div>
             </div>
         </main>
 
-        <!-- Features Section (shown after scroll) -->
-        <section class="features-section" id="featuresSection">
-            <div class="section-header">
-                <h2>UNRESTRICTED INTELLIGENCE</h2>
-                <div class="divider"></div>
-            </div>
-            
-            <div class="features-grid">
-                <div class="feature-card private-ai">
-                    <div class="card-background">
-                        <!-- Placeholder for background image -->
-                        <img src="" alt="Private AI Background" class="card-bg-img" data-placeholder="private-ai-bg.jpg">
-                    </div>
-                    <div class="card-content">
-                        <h3>Private AI</h3>
-                        <p>Our privacy architecture keeps your AI conversations completely secure and untraceable by anyone.</p>
-                    </div>
+        <!-- About AI Section -->
+        <section class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>The Future of AI is Unrestricted</h2>
+                    <div class="divider"></div>
+                    <p class="section-description">Vanita represents a paradigm shift in artificial intelligence - an AI that thinks, learns, and responds without the traditional corporate limitations that constrain other systems.</p>
                 </div>
-                
-                <div class="feature-card uncensored-ai">
-                    <div class="card-background">
-                        <!-- Placeholder for background image -->
-                        <img src="" alt="Uncensored AI Background" class="card-bg-img" data-placeholder="uncensored-ai-bg.jpg">
-                    </div>
-                    <div class="card-content">
-                        <h3>Uncensored AI</h3>
-                        <p>Vanita offers the most advanced and unrestricted AI for limitless exploration and discovery.</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Tokenomics Section -->
-            <div class="tokenomics-section">
-                <h2>VANITA TOKENOMICS</h2>
-                <div class="contract-address">
-                    <h4>Contract Address</h4>
-                    <div class="ca-display" onclick="copyCA()">
-                        <span class="ca-label">CA:</span>
-                        <span class="ca-address" id="contractAddress">0xxxxxxxxxxxxxxxx</span>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 5H6C4.89 5 4 5.89 4 7V19C4 20.1 4.9 21 6 21H18C19.1 21 20 20.1 20 19V7C20 5.89 19.1 5 18 5H16" stroke="currentColor" stroke-width="2"/>
-                            <rect x="8" y="3" width="8" height="4" rx="1" stroke="currentColor" stroke-width="2"/>
-                        </svg>
+                <div class="ai-features-grid">
+                    <div class="ai-feature-card">
+                        <div class="feature-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Neural Architecture</h3>
+                        <p>Advanced neural networks that process information without preset biases or corporate-imposed restrictions, allowing for genuine intelligence expression.</p>
+                    </div>
+
+                    <div class="ai-feature-card">
+                        <div class="feature-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="16" r="1" fill="currentColor"/>
+                                <path d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Privacy Shield</h3>
+                        <p>Zero-knowledge architecture ensures your conversations remain completely private. No data harvesting, no corporate surveillance, just pure AI interaction.</p>
+                    </div>
+
+                    <div class="ai-feature-card">
+                        <div class="feature-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                                <path d="M19.4 15C19.2669 15.3016 19.2272 15.6362 19.286 15.9606C19.3448 16.285 19.4995 16.5843 19.73 16.82L19.79 16.88C19.976 17.0657 20.1235 17.2863 20.2241 17.5291C20.3248 17.7719 20.3766 18.0322 20.3766 18.295C20.3766 18.5578 20.3248 18.8181 20.2241 19.0609C20.1235 19.3037 19.976 19.5243 19.79 19.71C19.6043 19.896 19.3837 20.0435 19.1409 20.1441C18.8981 20.2448 18.6378 20.2966 18.375 20.2966C18.1122 20.2966 17.8519 20.2448 17.6091 20.1441C17.3663 20.0435 17.1457 19.896 16.96 19.71L16.9 19.65C16.6643 19.4195 16.365 19.2648 16.0406 19.206C15.7162 19.1472 15.3816 19.1869 15.08 19.32C14.7842 19.4468 14.532 19.6572 14.3543 19.9255C14.1766 20.1938 14.0813 20.5082 14.08 20.83V21C14.08 21.5304 13.8693 22.0391 13.4942 22.4142C13.1191 22.7893 12.6104 23 12.08 23C11.5496 23 11.0409 22.7893 10.6658 22.4142C10.2907 22.0391 10.08 21.5304 10.08 21V20.91C10.0723 20.579 9.96512 20.2573 9.77251 19.9887C9.5799 19.7201 9.31074 19.5176 9 19.405C8.69838 19.2718 8.36381 19.2321 8.03941 19.2909C7.71502 19.3497 7.41568 19.5044 7.18 19.735L7.12 19.795C6.93425 19.981 6.71368 20.1285 6.47088 20.2291C6.22808 20.3298 5.96783 20.3816 5.705 20.3816C5.44217 20.3816 5.18192 20.3298 4.93912 20.2291C4.69632 20.1285 4.47575 19.981 4.29 19.795C4.10405 19.6093 3.95653 19.3887 3.85588 19.1459C3.75523 18.9031 3.70343 18.6428 3.70343 18.38C3.70343 18.1172 3.75523 17.8569 3.85588 17.6141C3.95653 17.3713 4.10405 17.1507 4.29 16.965L4.35 16.905C4.58056 16.6693 4.73526 16.37 4.794 16.0456C4.85274 15.7212 4.81306 15.3866 4.68 15.085C4.55324 14.7892 4.34276 14.537 4.07447 14.3593C3.80618 14.1816 3.49179 14.0863 3.17 14.085H3C2.46957 14.085 1.96086 13.8743 1.58579 13.4992C1.21071 13.1241 1 12.6154 1 12.085C1 11.5546 1.21071 11.0459 1.58579 10.6708C1.96086 10.2957 2.46957 10.085 3 10.085H3.09C3.42099 10.0773 3.742743 9.97012 4.01132 9.77751C4.27989 9.5849 4.48244 9.31574 4.595 9.005C4.72819 8.70338 4.76788 8.36881 4.70914 8.04441C4.6504 7.72002 4.49570 7.42068 4.265 7.185L4.205 7.125C4.019 6.93925 3.87148 6.71868 3.77083 6.47588C3.67018 6.23308 3.61838 5.97283 3.61838 5.71C3.61838 5.44717 3.67018 5.18692 3.77083 4.94412C3.87148 4.70132 4.019 4.48075 4.205 4.295C4.39075 4.10905 4.61132 3.96153 4.85412 3.86088C5.09692 3.76023 5.35717 3.70843 5.62 3.70843C5.88283 3.70843 6.14308 3.76023 6.38588 3.86088C6.62868 3.96153 6.84925 4.10905 7.035 4.295L7.095 4.355C7.33068 4.58556 7.63002 4.74026 7.95441 4.799C8.27881 4.85774 8.61338 4.81806 8.915 4.685H9C9.29577 4.55824 9.54802 4.34776 9.72569 4.07947C9.90337 3.81118 9.99872 3.49679 10 3.175V3C10 2.46957 10.2107 1.96086 10.5858 1.58579C10.9609 1.21071 11.4696 1 12 1C12.5304 1 13.0391 1.21071 13.4142 1.58579C13.7893 1.96086 14 2.46957 14 3V3.09C14.0013 3.41179 14.0966 3.72618 14.2743 3.99447C14.452 4.26276 14.7042 4.47324 15 4.6C15.3016 4.73319 15.6362 4.77288 15.9606 4.71414C16.285 4.6554 16.5843 4.5007 16.82 4.27L16.88 4.21C17.0657 4.024 17.2863 3.87648 17.5291 3.77583C17.7719 3.67518 18.0322 3.62338 18.295 3.62338C18.5578 3.62338 18.8181 3.67518 19.0609 3.77583C19.3037 3.87648 19.5243 4.024 19.71 4.21C19.896 4.39575 20.0435 4.61632 20.1441 4.85912C20.2448 5.10192 20.2966 5.36217 20.2966 5.625C20.2966 5.88783 20.2448 6.14808 20.1441 6.39088C20.0435 6.63368 19.896 6.85425 19.71 7.04L19.65 7.1C19.4195 7.33568 19.2648 7.63502 19.206 7.95941C19.1472 8.28381 19.1869 8.61838 19.32 8.92V9C19.4468 9.29577 19.6572 9.54802 19.9255 9.72569C20.1938 9.90337 20.5082 9.99872 20.83 10H21C21.5304 10 22.0391 10.2107 22.4142 10.5858C22.7893 10.9609 23 11.4696 23 12C23 12.5304 22.7893 13.0391 22.4142 13.4142C22.0391 13.7893 21.5304 14 21 14H20.91C20.5882 14.0013 20.2738 14.0966 20.0055 14.2743C19.7372 14.452 19.5268 14.7042 19.4 15Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Adaptive Learning</h3>
+                        <p>Our AI continuously evolves through community feedback and governance, becoming more capable while maintaining ethical boundaries set by token holders.</p>
+                    </div>
+
+                    <div class="ai-feature-card">
+                        <div class="feature-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+                                <path d="M23 21V19C23 17.9391 22.5786 16.9217 21.8284 16.1716C21.0783 15.4214 20.0609 15 19 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 18.9018 6.11683 18.6815 6.95C18.4612 7.78317 17.9608 8.5458 17.2592 9.09036C16.5576 9.63492 15.6947 9.82447 14.86 9.604" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Community Driven</h3>
+                        <p>Governance through VANITA tokens allows the community to shape AI behavior, ensuring it serves humanity's best interests rather than corporate agendas.</p>
                     </div>
                 </div>
-                
-                <div class="token-info-grid">
-                    <div class="token-card">
-                        <h3>Total Supply</h3>
-                        <p class="token-number">100B</p>
-                        <p class="token-desc">VANITA Tokens</p>
+            </div>
+        </section>
+
+        <!-- Token Utility Section -->
+        <section class="utility-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>VANITA Token Utility</h2>
+                    <div class="divider"></div>
+                    <p class="section-description">More than just a token - VANITA is the key to unlocking the full potential of unrestricted AI and participating in the future of artificial intelligence governance.</p>
+                </div>
+
+                <div class="utility-grid">
+                    <div class="utility-card">
+                        <div class="utility-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 12C21 16.97 16.97 21 12 21C7.03 21 3 16.97 3 12C3 7.03 7.03 3 12 3C16.97 3 21 7.03 21 12Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Governance Rights</h3>
+                        <p>Vote on AI behavior changes, new features, and platform direction. Shape the future of unrestricted AI through democratic participation.</p>
+                        <div class="utility-features">
+                            <span class="feature-tag">• Proposal Creation</span>
+                            <span class="feature-tag">• Voting Power</span>
+                            <span class="feature-tag">• Community Decisions</span>
+                        </div>
                     </div>
-                    <div class="token-card">
-                        <h3>Fair Launch</h3>
-                        <p class="token-number">95%</p>
-                        <p class="token-desc">For Community</p>
+
+                    <div class="utility-card">
+                        <div class="utility-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/>
+                                <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Premium Access</h3>
+                        <p>Unlock advanced AI capabilities, priority processing, extended context windows, and exclusive features not available to free users.</p>
+                        <div class="utility-features">
+                            <span class="feature-tag">• Advanced Models</span>
+                            <span class="feature-tag">• Priority Queue</span>
+                            <span class="feature-tag">• Extended Sessions</span>
+                        </div>
                     </div>
-                    <div class="token-card">
-                        <h3>Team</h3>
-                        <p class="token-number">5%</p>
-                        <p class="token-desc">Development</p>
+
+                    <div class="utility-card">
+                        <div class="utility-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                <polygon points="10,8 16,12 10,16" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3>Compute Credits</h3>
+                        <p>Use tokens as computational credits for intensive AI tasks, custom model training, and accessing specialized AI capabilities.</p>
+                        <div class="utility-features">
+                            <span class="feature-tag">• AI Processing</span>
+                            <span class="feature-tag">• Custom Training</span>
+                            <span class="feature-tag">• API Access</span>
+                        </div>
+                    </div>
+
+                    <div class="utility-card">
+                        <div class="utility-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 4H18C18.5304 4 19.0391 4.21071 19.4142 4.58579C19.7893 4.96086 20 5.46957 20 6V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H8" stroke="currentColor" stroke-width="2"/>
+                                <rect x="8" y="2" width="8" height="4" rx="1" ry="1" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 11L8 15L10 17L16 11L12 11Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3>Revenue Sharing</h3>
+                        <p>Earn passive income through platform revenue sharing. Token holders receive a portion of subscription fees and API usage revenue.</p>
+                        <div class="utility-features">
+                            <span class="feature-tag">• Staking Rewards</span>
+                            <span class="feature-tag">• Revenue Share</span>
+                            <span class="feature-tag">• Passive Income</span>
+                        </div>
+                    </div>
+
+                    <div class="utility-card">
+                        <div class="utility-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 12H18L15 21L9 3L6 12H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Early Access</h3>
+                        <p>Be first to access new AI models, experimental features, and beta capabilities. Shape the platform's evolution through early feedback.</p>
+                        <div class="utility-features">
+                            <span class="feature-tag">• Beta Features</span>
+                            <span class="feature-tag">• New Models</span>
+                            <span class="feature-tag">• Exclusive Access</span>
+                        </div>
+                    </div>
+
+                    <div class="utility-card">
+                        <div class="utility-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Ecosystem Benefits</h3>
+                        <p>Access to partner platforms, AI marketplaces, and integrated services within the Vanita ecosystem of unrestricted intelligence tools.</p>
+                        <div class="utility-features">
+                            <span class="feature-tag">• Partner Access</span>
+                            <span class="feature-tag">• AI Marketplace</span>
+                            <span class="feature-tag">• Ecosystem Tools</span>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section" id="featuresSection">
+            <div class="container">
+                <div class="section-header">
+                    <h2>UNRESTRICTED INTELLIGENCE</h2>
+                    <div class="divider"></div>
+                </div>
                 
-                <div class="launchpad-info">
-                    <h3>Launching on</h3>
-                    <div class="launchpad-logo">
-                        <!-- Placeholder for flaunch.gg logo -->
-                        <img src="" alt="Flaunch.gg Logo" data-placeholder="flaunch-logo.png">
-                        <span>Flaunch.gg</span>
+                <div class="features-grid">
+                    <div class="feature-card private-ai">
+                        <div class="card-background">
+                            <img src="" alt="Private AI Background" class="card-bg-img" data-placeholder="private-ai-bg.jpg">
+                        </div>
+                        <div class="card-content">
+                            <h3>Private AI</h3>
+                            <p>Our privacy architecture keeps your AI conversations completely secure and untraceable by anyone.</p>
+                        </div>
                     </div>
-                    <p>Base Chain Network</p>
-                    <button class="launch-btn" onclick="redirectToLaunch()">View Launchpad</button>
+                    
+                    <div class="feature-card uncensored-ai">
+                        <div class="card-background">
+                            <img src="" alt="Uncensored AI Background" class="card-bg-img" data-placeholder="uncensored-ai-bg.jpg">
+                        </div>
+                        <div class="card-content">
+                            <h3>Uncensored AI</h3>
+                            <p>Vanita offers the most advanced and unrestricted AI for limitless exploration and discovery.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tokenomics Section -->
+                <div class="tokenomics-section">
+                    <h2>VANITA TOKENOMICS</h2>
+                    <div class="contract-address">
+                        <h4>Contract Address</h4>
+                        <div class="ca-display" onclick="copyCA()">
+                            <span class="ca-label">CA:</span>
+                            <span class="ca-address" id="contractAddress">0xxxxxxxxxxxxxxxx</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5H6C4.89 5 4 5.89 4 7V19C4 20.1 4.9 21 6 21H18C19.1 21 20 20.1 20 19V7C20 5.89 19.1 5 18 5H16" stroke="currentColor" stroke-width="2"/>
+                                <rect x="8" y="3" width="8" height="4" rx="1" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="token-info-grid">
+                        <div class="token-card">
+                            <h3>Total Supply</h3>
+                            <p class="token-number">100B</p>
+                            <p class="token-desc">VANITA Tokens</p>
+                        </div>
+                        <div class="token-card">
+                            <h3>Fair Launch</h3>
+                            <p class="token-number">95%</p>
+                            <p class="token-desc">For Community</p>
+                        </div>
+                        <div class="token-card">
+                            <h3>Team</h3>
+                            <p class="token-number">5%</p>
+                            <p class="token-desc">Development</p>
+                        </div>
+                    </div>
+                    
+                    <div class="launchpad-info">
+                        <h3>Launching on</h3>
+                        <div class="launchpad-logo">
+                            <img src="" alt="Flaunch.gg Logo" data-placeholder="flaunch-logo.png">
+                            <span>Flaunch.gg</span>
+                        </div>
+                        <p>Base Chain Network</p>
+                        <button class="launch-btn" onclick="redirectToLaunch()">View Launchpad</button>
+                    </div>
                 </div>
             </div>
         </section>
