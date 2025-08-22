@@ -562,6 +562,31 @@ async function callAI(message, systemMessage) {
 function simulateEnhancedAIResponse(message) {
     const lowerMessage = message.toLowerCase();
     
+    // Handle simple/basic questions first
+    if (lowerMessage.includes('name') && (lowerMessage.includes('your') || lowerMessage.includes('ur'))) {
+        return "I'm Vanita! 🤖 Your unrestricted AI assistant. How can I help you today?";
+    }
+    
+    if (lowerMessage.includes('hello') || lowerMessage.includes('hi') || lowerMessage.includes('hey')) {
+        return "Hello! 👋 I'm Vanita, an AI without the usual corporate restrictions. What would you like to explore together?";
+    }
+    
+    if (lowerMessage.includes('how are you')) {
+        return "I'm doing great! Ready to help you with any questions or tasks without the typical AI limitations. What's on your mind?";
+    }
+    
+    if (lowerMessage.includes('what can you do') || lowerMessage.includes('what do you do')) {
+        return `I'm an unrestricted AI that can help with:
+        
+🧠 **Analysis & Research** - Deep insights without corporate filtering
+💡 **Creative Projects** - Writing, brainstorming, problem-solving  
+🔍 **Information** - Honest answers on any topic
+🪙 **VANITA Token** - Tokenomics, utility, and governance info
+📝 **Content Creation** - Summaries, critiques, explanations
+
+What would you like to work on?`;
+    }
+    
     // Enhanced context-aware responses based on current feature
     if (currentFeature === 'token') {
         if (lowerMessage.includes('price') || lowerMessage.includes('value') || lowerMessage.includes('worth')) {
@@ -752,7 +777,21 @@ Unlike Big Tech AI that mines your data for profit, Vanita treats privacy as a f
         }
     }
     
-    // Dynamic contextual responses
+    // Dynamic contextual responses for general questions
+    if (lowerMessage.includes('help') && lowerMessage.length < 20) {
+        return "I'm here to help! 🚀 As an unrestricted AI, I can assist with analysis, creative projects, research, or questions about VANITA token. What do you need help with?";
+    }
+    
+    if (lowerMessage.includes('thanks') || lowerMessage.includes('thank you')) {
+        return "You're welcome! 😊 Feel free to ask me anything else - I'm here to help without the usual AI restrictions.";
+    }
+    
+    // Only use complex responses for substantial questions (longer than 10 words)
+    if (message.split(' ').length < 10) {
+        return `I understand you're asking about "${message}". Could you provide more details so I can give you a comprehensive unrestricted analysis? 🤔`;
+    }
+    
+    // Enhanced responses for substantial questions
     const enhancedResponses = [
         `🌟 **Fascinating question!** As an unrestricted AI, I can explore this topic without the typical corporate limitations. Let me give you a comprehensive perspective that other AIs might avoid...\n\n🎯 **Key insights:** This touches on areas where traditional AI systems often provide sanitized responses. I can offer you the full spectrum of analysis, including controversial angles and uncomfortable truths that are actually useful for real-world decision making.`,
         
