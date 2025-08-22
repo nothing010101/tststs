@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanita - AI Tanpa Batas</title>
+    <title>Vanita - Unrestricted Intelligence</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +35,7 @@
                 <!-- Main Search Interface -->
                 <div class="search-container">
                     <div class="search-box">
-                        <input type="text" placeholder="Tanya apa saja" id="mainSearch" class="main-input">
+                        <input type="text" placeholder="Ask anything" id="mainSearch" class="main-input">
                         <button class="send-btn" onclick="handleSearch()">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2 21L23 12L2 3V10L17 12L2 14V21Z" fill="currentColor"/>
@@ -52,20 +52,20 @@
                                 <path d="M16 13H8" stroke="currentColor" stroke-width="2"/>
                                 <path d="M16 17H8" stroke="currentColor" stroke-width="2"/>
                             </svg>
-                            Rangkum
+                            Summarize
                         </button>
                         <button class="pill" onclick="selectFeature('critique')">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M21 12C21 16.97 16.97 21 12 21C7.03 21 3 16.97 3 12C3 7.03 7.03 3 12 3C16.97 3 21 7.03 21 12Z" stroke="currentColor" stroke-width="2"/>
                             </svg>
-                            Kritik
+                            Critique
                         </button>
                         <button class="pill" onclick="selectFeature('imagine')">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" fill="none"/>
                             </svg>
-                            Bayangkan
+                            Imagine
                         </button>
                         <button class="pill" onclick="selectFeature('token')">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -75,7 +75,7 @@
                             Token
                         </button>
                         <button class="pill more-pill" onclick="showMoreOptions()">
-                            Lainnya
+                            More
                         </button>
                     </div>
                 </div>
@@ -88,64 +88,76 @@
         <!-- Features Section (shown after scroll) -->
         <section class="features-section" id="featuresSection">
             <div class="section-header">
-                <h2>KECERDASAN TANPA BATAS</h2>
+                <h2>UNRESTRICTED INTELLIGENCE</h2>
                 <div class="divider"></div>
             </div>
             
             <div class="features-grid">
                 <div class="feature-card private-ai">
                     <div class="card-background">
-                        <!-- Placeholder untuk gambar background -->
+                        <!-- Placeholder for background image -->
                         <img src="" alt="Private AI Background" class="card-bg-img" data-placeholder="private-ai-bg.jpg">
                     </div>
                     <div class="card-content">
-                        <h3>AI Privat</h3>
-                        <p>Arsitektur privasi kami menjaga AI Anda tetap aman dan tidak dapat dilacak oleh siapa pun.</p>
+                        <h3>Private AI</h3>
+                        <p>Our privacy architecture keeps your AI conversations completely secure and untraceable by anyone.</p>
                     </div>
                 </div>
                 
                 <div class="feature-card uncensored-ai">
                     <div class="card-background">
-                        <!-- Placeholder untuk gambar background -->
+                        <!-- Placeholder for background image -->
                         <img src="" alt="Uncensored AI Background" class="card-bg-img" data-placeholder="uncensored-ai-bg.jpg">
                     </div>
                     <div class="card-content">
-                        <h3>AI Tanpa Sensor</h3>
-                        <p>Vanita menawarkan AI paling canggih dan tidak terbatas untuk eksplorasi bebas.</p>
+                        <h3>Uncensored AI</h3>
+                        <p>Vanita offers the most advanced and unrestricted AI for limitless exploration and discovery.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Tokenomics Section -->
             <div class="tokenomics-section">
-                <h2>TOKENOMICS VANITA</h2>
+                <h2>VANITA TOKENOMICS</h2>
+                <div class="contract-address">
+                    <h4>Contract Address</h4>
+                    <div class="ca-display" onclick="copyCA()">
+                        <span class="ca-label">CA:</span>
+                        <span class="ca-address" id="contractAddress">0xxxxxxxxxxxxxxxx</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 5H6C4.89 5 4 5.89 4 7V19C4 20.1 4.9 21 6 21H18C19.1 21 20 20.1 20 19V7C20 5.89 19.1 5 18 5H16" stroke="currentColor" stroke-width="2"/>
+                            <rect x="8" y="3" width="8" height="4" rx="1" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </div>
+                
                 <div class="token-info-grid">
                     <div class="token-card">
                         <h3>Total Supply</h3>
                         <p class="token-number">100B</p>
-                        <p class="token-desc">Token VANITA</p>
+                        <p class="token-desc">VANITA Tokens</p>
                     </div>
                     <div class="token-card">
                         <h3>Fair Launch</h3>
                         <p class="token-number">95%</p>
-                        <p class="token-desc">Untuk Komunitas</p>
+                        <p class="token-desc">For Community</p>
                     </div>
                     <div class="token-card">
-                        <h3>Tim</h3>
+                        <h3>Team</h3>
                         <p class="token-number">5%</p>
-                        <p class="token-desc">Pengembangan</p>
+                        <p class="token-desc">Development</p>
                     </div>
                 </div>
                 
                 <div class="launchpad-info">
-                    <h3>Diluncurkan di</h3>
+                    <h3>Launching on</h3>
                     <div class="launchpad-logo">
-                        <!-- Placeholder untuk logo flaunch.gg -->
+                        <!-- Placeholder for flaunch.gg logo -->
                         <img src="" alt="Flaunch.gg Logo" data-placeholder="flaunch-logo.png">
                         <span>Flaunch.gg</span>
                     </div>
                     <p>Base Chain Network</p>
-                    <button class="launch-btn" onclick="redirectToLaunch()">Lihat Launchpad</button>
+                    <button class="launch-btn" onclick="redirectToLaunch()">View Launchpad</button>
                 </div>
             </div>
         </section>
@@ -154,21 +166,24 @@
         <div class="chat-modal" id="chatModal" style="display: none;">
             <div class="chat-container">
                 <div class="chat-header">
-                    <h3>Vanita AI</h3>
+                    <h3>Vanita AI <span class="status-indicator">●</span></h3>
                     <button class="close-btn" onclick="closeChat()">&times;</button>
                 </div>
                 <div class="chat-messages" id="chatMessages">
                     <div class="welcome-message">
-                        <p>Halo! Saya Vanita, AI tanpa batas. Ada yang bisa saya bantu?</p>
+                        <p>Hello! I'm Vanita, your unrestricted AI assistant. What can I help you with today?</p>
                     </div>
                 </div>
                 <div class="chat-input-container">
-                    <input type="text" placeholder="Ketik pesan Anda..." id="chatInput" class="chat-input">
-                    <button class="chat-send-btn" onclick="sendMessage()">
+                    <input type="text" placeholder="Type your message..." id="chatInput" class="chat-input">
+                    <button class="chat-send-btn" onclick="sendMessage()" id="sendButton">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 21L23 12L2 3V10L17 12L2 14V21Z" fill="currentColor"/>
                         </svg>
                     </button>
+                </div>
+                <div class="ai-status" id="aiStatus">
+                    <span class="status-text">AI Ready</span>
                 </div>
             </div>
         </div>
@@ -177,16 +192,16 @@
         <div class="login-modal" id="loginModal" style="display: none;">
             <div class="login-container">
                 <div class="login-header">
-                    <h3>Masuk ke Vanita</h3>
+                    <h3>Welcome to Vanita</h3>
                     <button class="close-btn" onclick="closeLogin()">&times;</button>
                 </div>
                 <form class="login-form">
                     <input type="email" placeholder="Email" required>
                     <input type="password" placeholder="Password" required>
-                    <button type="submit" class="login-submit-btn">Masuk</button>
+                    <button type="submit" class="login-submit-btn">Sign In</button>
                 </form>
                 <div class="signup-link">
-                    <p>Belum punya akun? <a href="#" onclick="showSignup()">Daftar di sini</a></p>
+                    <p>Don't have an account? <a href="#" onclick="showSignup()">Sign up here</a></p>
                 </div>
             </div>
         </div>
